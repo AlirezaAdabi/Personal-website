@@ -15,8 +15,12 @@ const About = () => {
           <h2 className=" py-4">Who I Am</h2>
           <p className=" py-2 text-gray-600">// I am not a normal developer</p>
           <p className=" py-2 text-gray-600">
-            I start Programming In 2018 and when I work with some programming
-            language like C++, C#, Java, etc I'm Interesting to Web developing.
+            I started programming in 2018 in university because I'm a computer
+            Engineer and I worked in different aspects like network, sysadmin
+            and Programming with some languages like C++, C#, Java and python but I became
+            interested in web development.
+          </p>
+          <p className=" py-2 text-gray-600">
             In 2020 I start learning HTML ,CSS and Javascript and then I try to
             learn React.js and Next.js. For now I'm focused on building
             Front-End Web applications and try to learn the Node.js and back-end
