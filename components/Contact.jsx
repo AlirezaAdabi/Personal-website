@@ -36,26 +36,42 @@ const Contact = () => {
               <div>
                 <p className=" uppercase pt-8">Contact With Me</p>
                 <div className=" flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-[#5651e5]">
-                    <Link href="https://www.linkedin.com/in/alireza-adabi-5a4b77208/">
+                  <a
+                    href="https://www.linkedin.com/in/alireza-adabi-5a4b77208/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-[#5651e5]">
                       <FaLinkedinIn />
-                    </Link>
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-[#5651e5]">
-                    <Link href="https://github.com/AlirezaAdabi">
+                    </div>
+                  </a>
+                  <a
+                    href="https://github.com/AlirezaAdabi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-[#5651e5]">
                       <FaGithub />
-                    </Link>
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-[#5651e5]">
-                    <Link href="mailto:alireza.adabi78@gmail.com">
+                    </div>
+                  </a>
+                  <a
+                    href="mailto:alireza.adabi78@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-[#5651e5]">
                       <AiOutlineMail />
-                    </Link>
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-[#5651e5]">
-                    <Link href="https://twitter.com/Mehrab_Adabi">
+                    </div>
+                  </a>
+                  <a
+                    href="https://twitter.com/Mehrab_Adabi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-[#5651e5]">
                       <FaTwitter />
-                    </Link>
-                  </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
