@@ -4,6 +4,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 // import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 const Main = () => {
   return (
@@ -16,7 +17,17 @@ const Main = () => {
           <h1 className="py-4 text-gray-700">
             Hi, I'm <span className="text-[#5651e5]"> Alireza</span>
           </h1>
-          <h1 className="py-4 text-gray-700">A Front-End Developer</h1>
+          <h1 className="py-4 text-gray-700">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .pauseFor(600)
+                  .changeDelay(90)
+                  .typeString("A Front-End Developer")
+                  .start();
+              }}
+            />
+          </h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I'm a front-end developer specializing in building exceptional
             digital experience. Currently, I'm focused on building responsive
