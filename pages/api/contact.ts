@@ -13,12 +13,10 @@ export default async function handler(req, res) {
   };
   try {
     const app = initializeApp(firebaseConfig);
-    console.log(app);
     await writeContacts(req.body, app);
     res.status(200).json({ message: "successfully sent!" });
   } catch (error) {
     console.log(error);
-
     res.status(400).json({ message: "something is wrong!" });
   }
 }

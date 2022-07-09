@@ -30,7 +30,6 @@ const Contact = () => {
       alert(data.message);
     } catch (error) {
       alert("something is wrong!");
-      console.log(error);
     }
   };
 
