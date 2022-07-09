@@ -1,10 +1,11 @@
 import { getDatabase, ref, set } from "firebase/database";
 import { nanoid } from "nanoid";
 
-const writeContacts = (inputsValue, app) => {
+const writeContacts = async (inputsValue, app) => {
   const database = getDatabase(app);
 
-  set(ref(database, "contacts/" + nanoid()), inputsValue);
+  console.log(database);
+  const result = await set(ref(database, "contacts/" + nanoid()), inputsValue);
 
   return;
 };
