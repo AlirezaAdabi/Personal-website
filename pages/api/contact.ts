@@ -13,6 +13,8 @@ export default async function handler(req, res) {
   };
   try {
     const app = initializeApp(firebaseConfig);
+    console.log(req.body);
+
     writeContacts(req.body, app);
     res.status(200).json({ message: "successfully sent!" });
   } catch (error) {
