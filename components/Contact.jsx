@@ -22,7 +22,6 @@ const Contact = () => {
   const [fields, updateFields, setFields] = useUpdateInputs(initialState);
 
   const submitContactInfo = async (e) => {
-    console.log(process.env.NODE_ENV);
     e.preventDefault();
 
     try {

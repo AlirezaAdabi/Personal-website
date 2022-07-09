@@ -12,9 +12,9 @@ export default async function handler(req, res) {
     appId: process.env.FIREBASE_APP_ID,
   };
   try {
-    const app = initializeApp(firebaseConfig);
-    console.log(req.body);
+    console.log(firebaseConfig);
 
+    const app = initializeApp(firebaseConfig);
     writeContacts(req.body, app);
     res.status(200).json({ message: "successfully sent!" });
   } catch (error) {
