@@ -1,14 +1,39 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import ContactImg from "../public/assets/contact.jpg";
 import { AiOutlineMail } from "react-icons/ai";
-// import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { BiCodeAlt } from "react-icons/bi";
+import useUpdateInputs from "../hooks/useUpdateInputs";
+import { api } from "../lib/contactService";
+
+const initialState = {
+  name: "",
+  number: "",
+  email: "",
+  subject: "",
+  message: "",
+};
+
 const Contact = () => {
+  const [fields, updateFields, setFields] = useUpdateInputs(initialState);
+
+  const submitContactInfo = async (e) => {
+    console.log(process.env.NODE_ENV);
+    e.preventDefault();
+
+    try {
+      const { data } = await api(fields);
+      setFields(initialState);
+      alert(data.message);
+    } catch (error) {
+      alert("something is wrong!");
+    }
+  };
+
   return (
     <div id="contact" className=" w-full lg:h-screen">
       <div className=" max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -86,6 +111,9 @@ const Contact = () => {
                     <input
                       className=" border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      name="name"
+                      onChange={updateFields}
+                      value={fields.name}
                     />
                   </div>
                   <div className=" flex flex-col">
@@ -95,6 +123,9 @@ const Contact = () => {
                     <input
                       className=" border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      name="number"
+                      onChange={updateFields}
+                      value={fields.number}
                     />
                   </div>
                 </div>
@@ -103,6 +134,9 @@ const Contact = () => {
                   <input
                     className=" border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
+                    name="email"
+                    onChange={updateFields}
+                    value={fields.email}
                   />
                 </div>
                 <div className=" flex flex-col py-2">
@@ -110,6 +144,9 @@ const Contact = () => {
                   <input
                     className=" border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
+                    name="subject"
+                    onChange={updateFields}
+                    value={fields.subject}
                   />
                 </div>
                 <div className=" flex flex-col py-2">
@@ -117,9 +154,15 @@ const Contact = () => {
                   <textarea
                     className=" border-2 rounded-lg p-3 border-gray-300 "
                     rows="10"
+                    name="message"
+                    onChange={updateFields}
+                    value={fields.message}
                   ></textarea>
                 </div>
-                <button className=" w-full p-4 text-gray-100 mt-4">
+                <button
+                  className=" w-full p-4 text-gray-100 mt-4"
+                  onClick={submitContactInfo}
+                >
                   Send Message
                 </button>
               </form>
