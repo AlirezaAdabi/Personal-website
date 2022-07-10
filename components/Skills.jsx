@@ -14,7 +14,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src={"/assets/skills/Html.png"}
+                  src={"/assets/skills/html.png"}
                   width="64px"
                   height="64px"
                   alt="/"
@@ -30,7 +30,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src={"/assets/skills/Css.png"}
+                  src={"/assets/skills/css.png"}
                   width="64px"
                   height="64px"
                   alt="/"
@@ -46,7 +46,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src={"/assets/skills/Javascript.png"}
+                  src={"/assets/skills/javascript.png"}
                   width="64px"
                   height="64px"
                   alt="/"
@@ -78,7 +78,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src={"/assets/skills/Tailwind.png"}
+                  src={"/assets/skills/tailwind.png"}
                   width="64px"
                   height="64px"
                   alt="/"
@@ -94,7 +94,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src={"/assets/skills/NextJS.png"}
+                  src={"/assets/skills/nextjs.png"}
                   width="64px"
                   height="64px"
                   alt="/"
@@ -110,7 +110,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src={"/assets/skills/Node.png"}
+                  src={"/assets/skills/node.png"}
                   width="64px"
                   height="64px"
                   alt="/"
@@ -125,7 +125,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src={"/assets/skills/Mongo.png"}
+                  src={"/assets/skills/mongo.png"}
                   width="64px"
                   height="64px"
                   alt="/"
