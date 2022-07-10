@@ -24,6 +24,10 @@ const Contact = () => {
   const submitContactInfo = async (e) => {
     e.preventDefault();
 
+    if (fields.email.length < 3 || fields.message.length < 3) {
+      return alert("Please fill out email and message fields.");
+    }
+
     try {
       const { data } = await api(fields);
       setFields(initialState);
