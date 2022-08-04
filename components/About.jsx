@@ -6,7 +6,7 @@ import AboutImg from "../public/assets/skills/about.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-4 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className=" col-span-2">
           <p className=" uppercase text-xl tracking-widest text-[#5651e5]">
@@ -17,8 +17,8 @@ const About = () => {
           <p className=" py-2 text-gray-600">
             I started programming in 2018 in university because I'm a computer
             Engineer and I worked in different aspects like network, sysadmin
-            and Programming with some languages like C++, C#, Java and python but I became
-            interested in web development.
+            and Programming with some languages like C++, C#, Java and python
+            but I became interested in web development.
           </p>
           <p className=" py-2 text-gray-600">
             In 2020 I start learning HTML ,CSS and Javascript and then I try to
