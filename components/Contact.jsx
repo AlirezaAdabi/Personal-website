@@ -83,7 +83,7 @@ const Contact = () => {
                     </div>
                   </a>
                   <a
-                    href="mailto:alireza.adabi78@gmail.com"
+                    href="mailto:mail@alireza-adabi.ir"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
